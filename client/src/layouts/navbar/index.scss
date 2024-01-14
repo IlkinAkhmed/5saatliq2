@@ -1,0 +1,136 @@
+nav {
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(35, 111, 93);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    .nav-inner {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            h1 {
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .nav-texts {
+            display: flex;
+            width: 60%;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .nav-link {
+                color: white;
+                font-weight: bold;
+
+            }
+
+            .nav-link.active {
+                color: red;
+            }
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .fa-heart {
+                cursor: pointer;
+                color: white;
+                font-size: 1.5em;
+                transition: all .2s;
+                position: relative;
+
+                &:hover {
+                    color: red;
+                }
+
+                p {
+                    color: red;
+                    position: absolute;
+                    top: 0;
+                    right: -10px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    background-color: white;
+                    padding: 0 5px;
+                    border-radius: 100%;
+                }
+            }
+
+            .fa-bars {
+                display: none;
+            }
+
+            .fa-bars,
+            .fa-xmark {
+                cursor: pointer;
+                font-size: 2em;
+                color: white;
+
+            }
+        }
+    }
+}
+
+.mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 111, 93);
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+
+    .mobile-nav-texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+
+        .mobile-nav-link {
+            width: 100;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        .mobile-nav-link.active {
+            color: red;
+        }
+    }
+}
+
+.mobile-nav-open {
+    height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        .nav-inner {
+            .nav-texts {
+                display: none;
+            }
+
+            .icons {
+                .fa-bars {
+                    display: block;
+                }
+
+            }
+        }
+    }
+}

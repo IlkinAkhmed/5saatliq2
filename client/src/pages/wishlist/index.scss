@@ -1,0 +1,90 @@
+.wishlist {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+
+    .head {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+        color: rgb(35, 111, 93);
+
+        p {
+            font-family: 'Crimson Text', serif;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+    .wrapper {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card {
+            width: 31%;
+            min-height: 400px;
+
+            &:hover .card-icons {
+                transform: translateY(0) !important;
+            }
+
+            .img {
+                height: 70%;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .texts {
+                height: 30%;
+                padding: 20px 0;
+                text-align: center;
+                color: rgb(35, 111, 93);
+                i{
+                    cursor: pointer;
+                    font-size: 1.5em;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wishlist {
+        .wrapper {
+            flex-wrap: wrap;
+
+            .card {
+                width: 48% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wishlist {
+        .wrapper {
+            width: 90%;
+            flex-wrap: wrap;
+
+            .card {
+                width: 95% !important;
+            }
+        }
+    }
+}

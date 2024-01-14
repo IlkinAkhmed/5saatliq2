@@ -1,0 +1,87 @@
+.team {
+    width: 100%;
+    color: rgb(35, 111, 93);
+    padding: 50px;
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .head {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+
+        p {
+            font-family: 'Crimson Text', serif;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+    .team-wrapper {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card {
+            width: 31%;
+            min-height: 400px;
+
+            &:hover .team-icons {
+                opacity: 1 !important;
+            }
+
+            .img {
+                height: 70%;
+                overflow: hidden;
+                position: relative;
+
+                .team-icons {
+                    top: 0;
+                    left: 10px;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px 0;
+                    gap: 20px;
+                    opacity: 0;
+                    transition: all .3s;
+
+                    i {
+                        cursor: pointer;
+                        color: rgb(35, 111, 93);
+                        font-size: 1.5em;
+                        border-radius: 100%;
+                        padding: 5px;
+                        background-color: rgb(255, 255, 255);
+                        transition: all .3s;
+
+                        &:hover {
+                            background-color: white;
+                            color: rgb(35, 111, 93);
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .texts {
+                height: 30%;
+                padding: 20px 0;
+                text-align: center;
+                color: rgb(35, 111, 93);
+            }
+        }
+    }
+
+}

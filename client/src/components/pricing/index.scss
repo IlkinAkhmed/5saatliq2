@@ -1,0 +1,83 @@
+.pricing {
+    width: 100%;
+    color: rgb(35, 111, 93);
+    padding: 50px;
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .head {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+
+        p {
+            font-family: 'Crimson Text', serif;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+    }
+    .pricing-wrapper{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .cards{
+            width: 31%;
+            min-height: 370px;
+            border: 1px solid rgb(35, 111, 93);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 1.5em;
+            span{
+                font-size: .7em;
+            }
+            button{
+                background-color: rgb(157, 187, 180);
+                cursor: pointer;
+                border-color: transparent;
+                padding: 10px 20px;
+                color: white;
+                &:hover{
+                    background-color: rgb(35, 111, 93);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .pricing {
+        .pricing-wrapper {
+            flex-wrap: wrap;
+
+            .cards {
+                width: 48% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pricing {
+        .pricing-wrapper {
+            width: 95%;
+            flex-wrap: wrap;
+
+            .cards {
+                width: 95% !important;
+            }
+        }
+    }
+}
